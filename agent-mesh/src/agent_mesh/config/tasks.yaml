@@ -1,0 +1,21 @@
+research_task:
+  description: >
+    Conduct a thorough research in identifying correct Agent for the given task {topic}.
+  expected_output: >
+    Correct Agent name for given task {topic}. A string with agent name should be returned.
+  agent: researcher
+
+quality_task:
+  description: >
+    Review the information you got and make sure the right Agent was selected for given task {topic}.
+  expected_output: >
+    Return valid Agent name selected for a task {topic}.
+  agent: quality_analyst
+
+
+output_task:
+  description: >
+    Review the agent name matches from list of available agents and make sure it is a string.
+  expected_output: >
+    A string with agent name should be returned.
+  agent: quality_analyst
