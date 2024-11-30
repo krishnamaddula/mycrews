@@ -12,7 +12,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'I don\'t know when will I get my order delivered'
+        'topic': 'How to write a blog post'
     }
     AgentMesh().crew().kickoff(inputs=inputs)
 

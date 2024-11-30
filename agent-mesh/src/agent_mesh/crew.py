@@ -40,6 +40,7 @@ class AgentMesh():
     def output_task(self) -> Task:
         return Task(
             config=self.tasks_config['output_task'],
+            tools=[AgentDiscoveryTool()],
             output_file='report.md'
         )
 
